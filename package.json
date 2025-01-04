@@ -4,12 +4,12 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "start:all": "concurrently \"cd apps/docs && pnpm start\" \"cd apps/web && pnpm start\"",
+    "start:docs": "cd apps/docs && pnpm start",
+    "start:web": "cd apps/web && pnpm start",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "concurrently": "^9.1.2",
     "prettier": "^3.2.5",
     "turbo": "^2.3.3",
     "typescript": "5.5.4"

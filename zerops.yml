@@ -1,16 +1,21 @@
 zerops:
-  - setup: turborepo
+  - setup: frontend
     build:
       base: nodejs@20
       buildCommands:
         - pnpm i
-        - cd apps/web && pnpm run build
-        - cd apps/docs && pnpm run build
+        - pnpm run build
       deployFiles: /
     run:
       base: nodejs@20
       ports:
         - port: 3000
+          httpSupport: true
         - port: 3001
           httpSupport: true
-      start: pnpm run start:all
+      startCommands:
+        - command: pnpm run start:web
+          name: web
+        - command: pnpm run start:docs
+          name: docs
+
