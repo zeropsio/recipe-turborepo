@@ -1,32 +1,16 @@
 zerops:
   - setup: turborepo
-    # ==== how to build your application ====
     build:
-      # what technologies should the build
-      # container be based on (can be an array)
       base: nodejs@20
-
-      # what commands to use to build your app
       buildCommands:
-        - npm i
-        - npm run build
-
-      # select which files / folders to deploy
-      # after the build successfully finished
+        - pnpm i
+        - cd apps/web && pnpm run build
+        - cd apps/docs && pnpm run build
       deployFiles: /
-    # ==== how to run your application ====
     run:
-      # what technology should the runtime
-      # container be based on, can be extended
-      # in `run.prepareCommands` using
-      # `zsc install nodejs@20`
       base: nodejs@20
-
-      # what ports your app listens on
-      # and whether it supports http traffic
       ports:
         - port: 3000
+        - port: 3001
           httpSupport: true
-
-      # how to start your application
-      start: npm start
+      start: pnpm run start:all
