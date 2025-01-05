@@ -1,6 +1,6 @@
 # Zerops x Turborepo
 
-A Basic Turborepo setup for a monorepo project of web and docs on Zerops. [Zerops](https://zerops.io) makes deploying and running Turborepo apps, a breeze.
+A Basic Turborepo setup for a monorepo project of web and docs on Zerops.
 
 We also have recipes for [Next.js Static](https://github.com/zeropsio/recipe-nextjs-static) and [Next.js Node.js](https://github.com/zeropsio/recipe-nextjs-nodejs).
 
