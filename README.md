@@ -2,14 +2,14 @@
 
 A Basic Turborepo setup for a monorepo project on Zerops.
 
-![cover-turborepo](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-turborepo.svg)
+![turborepo](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-turborepo.svg)
 
 
 ## Deploy on Zerops
 
 You can either click the deploy button to deploy directly on Zerops, or manually copy the import yaml to the import dialog in the Zerops app.
 
-![deploy-zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/deploy-zerops.svg)
+[![Deploy on Zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/green/deploy-button.svg)](https://app.zerops.io/recipe/turborepo)
 
 ## Production vs. Development
 
